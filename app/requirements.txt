@@ -1,0 +1,8 @@
+Flask
+docx
+Werkzeug
+WTForms
+Flask-WTF
+itsdangerous
+pillow
+pytest
