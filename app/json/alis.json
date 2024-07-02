@@ -1,0 +1,16 @@
+{
+  "ALIs": [
+    {
+      "nome": "Clientes",
+      "complexidade": "Alto",
+      "RLRs": 3,
+      "DERs": 50
+    },
+    {
+      "nome": "Produtos",
+      "complexidade": "Médio",
+      "RLRs": 2,
+      "DERs": 30
+    }
+  ]
+}

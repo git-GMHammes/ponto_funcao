@@ -1,0 +1,60 @@
+{
+  "glossario_usuario": [
+    {
+      "fronteiras": {
+        "ALI": {
+          "tipo": "Fronteira",
+          "sigla": "ALI",
+          "resumo": "Arquivo Logico Interno",
+          "descricao": "A Aplicação possui total domínio (Arquivos ou Banco de Dados)"
+        },
+        "AIE": {
+          "tipo": "Fronteira",
+          "sigla": "AIE",
+          "resumo": "Arquivo Logico Externo",
+          "descricao": "Não esta mantida dentro da aplicação (API ou Web-service)"
+        }
+      },
+      "funcoes_transacionais": {
+        "EE": {
+          "tipo": "Função Transacional",
+          "sigla": "EE",
+          "resumo": "Entrada Externa",
+          "descricao": "Recebem os dados da aplicação (Comando de Voz, imput de dados ou formulário)"
+        },
+        "SE": {
+          "tipo": "Função Transacional",
+          "sigla": "SE",
+          "resumo": "Saída Externa",
+          "descricao": "Apresentação de dados (Saida com processamento ou Cálculo)"
+        },
+        "CE": {
+          "tipo": "Função Transacional",
+          "sigla": "CE",
+          "resumo": "Consulta Externa",
+          "descricao": "Apresentação de dados (Informação simples, Relatório que não necessite de cálculo)"
+        },
+        "DSG": {
+          "tipo": "Função Transacional",
+          "sigla": "DSG",
+          "resumo": "Grupo de Dados Compartilhados",
+          "descricao": "Grupo de dados que são compartilhados por mais de uma função transacional (Ex: CEP, CPF ou CNPJ)"
+        }
+      },
+      "abstraoes_negocios": {
+        "RLR": {
+          "tipo": "Abstração de Negócio",
+          "sigla": "RLR",
+          "resumo": "Registro Lógico Referênciado",
+          "descricao": "Cleinte, Pedido ou Produto"
+        },
+        "DER": {
+          "tipo": "Abstração de Negócio",
+          "sigla": "DER",
+          "resumo": "Dado Elementar Referênciado",
+          "descricao": "Atributos de um Registro Lógico Referênciado (Nome, Código ou Valor)"
+        }
+      }
+    }
+  ]
+}
