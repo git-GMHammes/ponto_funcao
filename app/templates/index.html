@@ -1,11 +1,67 @@
 <!-- Caminho: C:\laragon\www\apf\app\templates\index.html -->
-
 <!DOCTYPE html>
 <html>
   <head>
     <title>Flask MVT Example</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- React e ReactDOM CDN -->
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <!-- Babel CDN -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
   <body>
-    <h1>OLA FLASK</h1>
+    <div id="app"></div>
+    <script type="text/babel">
+      // This is a simple React component
+      class App extends React.Component {
+        render() {
+          return (
+            <div className="m-5 p-5">
+              <div className="d-flex justify-content-center">
+                <div className="card">
+                  <div className="card-header">
+                    <h5 className="card-title">URLs de API</h5>
+                  </div>
+                  <div className="card-body">
+                    <table className="table table-striped table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">Acesso</th>
+                          <th scope="col">Endpoint</th>
+                          <th scope="col">Exemplo Completo</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {% for name, url in template_urls.items() %}
+                          <tr>
+                            <td><a className="btn btn-outline-primary btn-sm" href="{{ url }}" role="button" target="_blank">Link</a></td>
+                            <td>
+                              <b>Rota (Endpoint): </b><i>"/api/template/"</i> <br />
+                              <b>String: </b><i>{{ name }}</i>
+                            </td>
+                            <td>{{ url }}</td>
+
+                          </tr>
+                        {% endfor %}
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="card-footer text-right">
+                    PRODERJ, {{ formatted_date }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        }
+      }
+      // Rendering the React component inside the div with id 'app'
+      ReactDOM.render(<App />, document.getElementById("app"));
+    </script>
   </body>
 </html>
