@@ -1,0 +1,16 @@
+{
+  "EE": [
+    {
+      "nome": "Cadastro de Cliente",
+      "complexidade": "Alta",
+      "ALRs": 2,
+      "DERs": 20
+    },
+    {
+      "nome": "Pedido de Compra",
+      "complexidade": "Média",
+      "ALRs": 1,
+      "DERs": 10
+    }
+  ]
+}

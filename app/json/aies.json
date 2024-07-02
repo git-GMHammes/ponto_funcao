@@ -1,0 +1,16 @@
+{
+  "AIEs": [
+    {
+      "nome": "Estoque Externo",
+      "complexidade": "Baixo",
+      "RLRs": 1,
+      "DERs": 15
+    },
+    {
+      "nome": "Dados de Vendas Externas",
+      "complexidade": "Médio",
+      "RLRs": 2,
+      "DERs": 25
+    }
+  ]
+}

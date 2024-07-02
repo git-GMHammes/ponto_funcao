@@ -1,3 +1,5 @@
+Flask que calcula pontos de função com estrutura MVT
+
 C:\laragon\www\apf\
 |
 |-- app\
@@ -5,6 +7,17 @@ C:\laragon\www\apf\
 |   |
 |   |-- instance\
 |   |   |-- config.py
+|   |
+|   |-- json\
+|   |   |-- aies.json
+|   |   |-- alis.json
+|   |   |-- ce.json
+|   |   |-- ee.json
+|   |   |-- se.json
+|   |
+|   |-- model\
+|   |   |-- config.py
+|   |   |-- data_model.py
 |   |
 |   |-- static\
 |   |   |-- css\
@@ -14,7 +27,11 @@ C:\laragon\www\apf\
 |   |-- templates\
 |   |   |-- index.html
 |   |
+|   |-- saida\
+|   |   |-- pf202407210848.json
+|   |
 |   |-- views\
+|   |-- __pycache__\
 |   |   |-- __init__.py
 |   |   |-- home_view.py
 |   |
@@ -22,7 +39,6 @@ C:\laragon\www\apf\
 |   |-- app.py
 |   |-- models.py
 |   |-- requirements.txt
-|   |-- requirements_bkp.txt
 |   |-- run.py
 |
 |-- Documentacao\

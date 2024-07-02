@@ -1,0 +1,18 @@
+{
+  "CE": [
+    {
+      "nome": "Consulta de Cliente",
+      "complexidade": "Média",
+      "consulta": "Recupera dados de cliente sem alterar o estado no sistema.",
+      "ALRs": 1,
+      "DERs": 10
+    },
+    {
+      "nome": "Consulta de Produto",
+      "complexidade": "Baixa",
+      "consulta": "Mostra detalhes do produto disponíveis em estoque.",
+      "ALRs": 1,
+      "DERs": 8
+    }
+  ]
+}

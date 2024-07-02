@@ -1,0 +1,18 @@
+{
+  "SE": [
+    {
+      "nome": "Relatório de Vendas",
+      "complexidade": "Alta",
+      "processamento": "Agrega dados de várias fontes e gera estatísticas de vendas.",
+      "ALIs": 2,
+      "DERs": 40
+    },
+    {
+      "nome": "Notificação de Estoque",
+      "complexidade": "Baixa",
+      "processamento": "Verifica níveis de estoque e envia alertas.",
+      "ALIs": 1,
+      "DERs": 5
+    }
+  ]
+}
