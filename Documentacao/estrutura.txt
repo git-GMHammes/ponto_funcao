@@ -13,7 +13,12 @@ C:\laragon\www\apf\
 |   |   |-- alis.json
 |   |   |-- ce.json
 |   |   |-- ee.json
+|   |   |-- glossario_usuario.json
 |   |   |-- se.json
+|   |   |-- template_manutencao_sistema.json
+|   |   |-- template_migracao_dados.json
+|   |   |-- template_sistema_padrao.json
+|   |   |-- template_site_headless_crm.json
 |   |
 |   |-- model\
 |   |   |-- config.py
