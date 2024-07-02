@@ -1,5 +1,4 @@
-# Caminho: C:\laragon\www\apf\app\app.py
-
+# C:\laragon\www\ponto_funcao\app\app.py
 from app import create_app
 
 app = create_app()

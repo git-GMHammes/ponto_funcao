@@ -1,6 +1,6 @@
 Flask que calcula pontos de função com estrutura MVT
 
-C:\laragon\www\apf\
+C:\laragon\www\ponto_funcao\Documentacao\estrutura.txt
 |
 |-- app\
 |   |-- __pycache__\
@@ -21,8 +21,13 @@ C:\laragon\www\apf\
 |   |   |-- template_site_headless_crm.json
 |   |
 |   |-- model\
+|   |   |-- __init__.py
 |   |   |-- config.py
 |   |   |-- data_model.py
+|   |   |-- template_manutencao_sistema_model.py
+|   |   |-- template_migracao_dados_model.py
+|   |   |-- template_sistema_padrao_model.py
+|   |   |-- template_site_headless_crm_model.py
 |   |
 |   |-- static\
 |   |   |-- css\
@@ -39,6 +44,7 @@ C:\laragon\www\apf\
 |   |-- __pycache__\
 |   |   |-- __init__.py
 |   |   |-- home_view.py
+|   |   |-- template_data_view
 |   |
 |   |-- __init__.py
 |   |-- app.py
