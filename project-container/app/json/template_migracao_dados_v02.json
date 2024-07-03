@@ -1,0 +1,29 @@
+{
+  "template_migracao_dados": [
+    {
+      "nome": "Migração de Dados",
+      "fronteiras": [
+        {
+          "fronteira": "ALI",
+          "discriminativo": "Dados",
+          "complexidade": "Baixa",
+          "pontos": 7
+        }
+      ],
+      "funcoes_transacionais": [
+        {
+          "funcao_transacional": "EE",
+          "nome": "Carga",
+          "complexidade": "Média",
+          "pontos": 4
+        },
+        {
+          "funcao_transacional": "SE",
+          "nome": "Relatório Gerencial",
+          "complexidade": "Baixa",
+          "pontos": 4
+        }
+      ]
+    }
+  ]
+}

@@ -10,7 +10,7 @@ class TemplateSiteHeadlessCRMModel:
     def load_data(self):
         # Caminho relativo ao diretório base da aplicação
         base_path = current_app.root_path
-        file_path = os.path.join(base_path, 'json', 'template_site_headless_crm.json')
+        file_path = os.path.join(base_path, 'json', 'template_site_headless_crm_v02.json')
         
         with open(file_path, 'r') as file:
             data = json.load(file)
