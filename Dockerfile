@@ -2,14 +2,14 @@
 FROM python:3.10-slim
 
 # Definir o diretório de trabalho dentro do container
-WORKDIR /app
+WORKDIR /project-container
 
 # Copiar o arquivo de dependências e instalar as dependências
-COPY app/requirements.txt .
+COPY project-container/app/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copiar o restante do código-fonte do aplicativo para o diretório de trabalho
-COPY app/ .
+COPY project-container/ .
 
 # Definir variável de ambiente
 ENV FLASK_APP=app.py
