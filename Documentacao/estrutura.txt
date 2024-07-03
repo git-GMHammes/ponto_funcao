@@ -1,57 +1,64 @@
 Flask que calcula pontos de função com estrutura MVT
 
 C:\laragon\www\ponto_funcao\Documentacao\estrutura.txt
-|
-|-- app\
-|   |-- __pycache__\
-|   |
-|   |-- instance\
-|   |   |-- config.py
-|   |
-|   |-- json\
-|   |   |-- aies.json
-|   |   |-- alis.json
-|   |   |-- ce.json
-|   |   |-- ee.json
-|   |   |-- glossario_usuario.json
-|   |   |-- se.json
-|   |   |-- template_manutencao_sistema.json
-|   |   |-- template_migracao_dados.json
-|   |   |-- template_sistema_padrao.json
-|   |   |-- template_site_headless_crm.json
-|   |
-|   |-- model\
+|-- project-container\
+|   |-- app\
+|   |   |-- __pycache__\
+|   |   |
+|   |   |-- instance\
+|   |   |   |-- config.py
+|   |   |
+|   |   |-- json\
+|   |   |   |-- aies.json
+|   |   |   |-- alis.json
+|   |   |   |-- ce.json
+|   |   |   |-- ee.json
+|   |   |   |-- glossario_usuario.json
+|   |   |   |-- se.json
+|   |   |   |-- template_manutencao_sistema_v01.json
+|   |   |   |-- template_manutencao_sistema_v02.json
+|   |   |   |-- template_manutencao_sistema_v03.json
+|   |   |   |-- template_migracao_dados_v01.json
+|   |   |   |-- template_migracao_dados_v02.json
+|   |   |   |-- template_migracao_dados_v03.json
+|   |   |   |-- template_sistema_padrao_v01.json
+|   |   |   |-- template_sistema_padrao_v02.json
+|   |   |   |-- template_site_headless_crm_v01.json
+|   |   |   |-- template_site_headless_crm_v02.json
+|   |   |   |-- template_site_headless_crm_v03.json
+|   |   |
+|   |   |-- model\
+|   |   |   |-- __init__.py
+|   |   |   |-- config.py
+|   |   |   |-- data_model.py
+|   |   |   |-- template_manutencao_sistema_model.py
+|   |   |   |-- template_migracao_dados_model.py
+|   |   |   |-- template_sistema_padrao_model.py
+|   |   |   |-- template_site_headless_crm_model.py
+|   |   |
+|   |   |-- static\
+|   |   |   |-- css\
+|   |   |   |-- img\
+|   |   |   |-- js\
+|   |   |
+|   |   |-- templates\
+|   |   |   |-- index.html
+|   |   |
+|   |   |-- saida\
+|   |   |   |-- pf202407210848.json
+|   |   |
+|   |   |-- views\
+|   |   |-- __pycache__\
+|   |   |   |-- __init__.py
+|   |   |   |-- home_view.py
+|   |   |   |-- template_data_view
+|   |   |
 |   |   |-- __init__.py
-|   |   |-- config.py
-|   |   |-- data_model.py
-|   |   |-- template_manutencao_sistema_model.py
-|   |   |-- template_migracao_dados_model.py
-|   |   |-- template_sistema_padrao_model.py
-|   |   |-- template_site_headless_crm_model.py
+|   |   |-- app.py
+|   |   |-- models.py
+|   |   |-- requirements.txt
+|   |   |-- run.py
 |   |
-|   |-- static\
-|   |   |-- css\
-|   |   |-- img\
-|   |   |-- js\
-|   |
-|   |-- templates\
-|   |   |-- index.html
-|   |
-|   |-- saida\
-|   |   |-- pf202407210848.json
-|   |
-|   |-- views\
-|   |-- __pycache__\
-|   |   |-- __init__.py
-|   |   |-- home_view.py
-|   |   |-- template_data_view
-|   |
-|   |-- __init__.py
-|   |-- app.py
-|   |-- models.py
-|   |-- requirements.txt
-|   |-- run.py
-|
 |-- Documentacao\
 |
 |-- venv\
