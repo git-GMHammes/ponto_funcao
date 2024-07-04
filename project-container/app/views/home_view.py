@@ -2,7 +2,8 @@
 import locale
 from datetime import datetime
 from flask import Blueprint, render_template, request, jsonify
-from app.utils.get_url import get_url_components  # Ajuste o caminho conforme a estrutura de diretórios
+# Ajuste o caminho conforme a estrutura de diretórios
+from app.utils.get_url import get_url_components
 
 
 from app.models import (
@@ -24,14 +25,14 @@ model_mapping = {
 }
 
 
-
 class HomeView:
     @staticmethod
     @bp.route('/')
     def home():
         # Obter a data e hora atual
         now = datetime.now()
-        formatted_date = now.strftime("%d de %B de %Y, %H:%M")  # Formato "02 de Junho de 2024, 18:16"
+        # Formato "02 de Junho de 2024, 18:16"
+        formatted_date = now.strftime("%d de %B de %Y, %H:%M")
 
         # Configuração de locale para formatação de data em português
         try:
@@ -45,8 +46,8 @@ class HomeView:
         # Obtém outros dados necessários para o template
         url_info = get_url_components()
         base_api_url = f"{url_info['base_url']}api/template/"
-        template_urls = {name: f"{base_api_url}{name}" for name in model_mapping.keys()}
-        
+        template_urls = {
+            name: f"{base_api_url}{name}" for name in model_mapping.keys()}
 
         return render_template('index.html', template_urls=template_urls, formatted_date=formatted_date)
 

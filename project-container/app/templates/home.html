@@ -1,0 +1,48 @@
+<!-- app/templates/home.html -->
+<script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type="text/babel">
+  class App extends React.Component {
+    render() {
+      return (
+        <div className="m-5 p-5">
+          <div className="d-flex justify-content-center">
+            <div className="card">
+              <div className="card-header">
+                <h5 className="card-title">URLs de API</h5>
+              </div>
+              <div className="card-body">
+                <table className="table table-striped table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col">Acesso</th>
+                      <th scope="col">Endpoint</th>
+                      <th scope="col">Exemplo Completo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for name, url in template_urls.items() %}
+                      <tr>
+                        <td><a className="btn btn-outline-primary btn-sm" href="{{ url }}" role="button" target="_blank">Link</a></td>
+                        <td>
+                          <b>Rota (Endpoint): </b><i>"/api/template/"</i> <br />
+                          <b>String: </b><i>{{ name }}</i>
+                        </td>
+                        <td>{{ url }}</td>
+                      </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+              <div class="card-footer text-right">
+                PRODERJ, {{ formatted_date }}
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    }
+  }
+  ReactDOM.render(<App />, document.getElementById("app"));
+</script>
