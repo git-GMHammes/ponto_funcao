@@ -1,4 +1,7 @@
-Flask que calcula pontos de função com estrutura MVT
+Projeto, 
+Em Flask, 
+Com estrutura MVT, 
+Que gera calculo de pontos de função. 
 
 C:\laragon\www\ponto_funcao\Documentacao\estrutura.txt
 |-- project-container\
@@ -29,12 +32,13 @@ C:\laragon\www\ponto_funcao\Documentacao\estrutura.txt
 |   |   |
 |   |   |-- model\
 |   |   |   |-- __init__.py
-|   |   |   |-- config.py
-|   |   |   |-- data_model.py
 |   |   |   |-- template_manutencao_sistema_model.py
 |   |   |   |-- template_migracao_dados_model.py
 |   |   |   |-- template_sistema_padrao_model.py
 |   |   |   |-- template_site_headless_crm_model.py
+|   |   |
+|   |   |-- saida\
+|   |   |   |-- pf202407210848.json
 |   |   |
 |   |   |-- static\
 |   |   |   |-- css\
@@ -42,10 +46,13 @@ C:\laragon\www\ponto_funcao\Documentacao\estrutura.txt
 |   |   |   |-- js\
 |   |   |
 |   |   |-- templates\
+|   |   |   |-- form_ponto_funcao.html
+|   |   |   |-- home.html
 |   |   |   |-- index.html
 |   |   |
-|   |   |-- saida\
-|   |   |   |-- pf202407210848.json
+|   |   |-- utils\
+|   |   |   |-- __init__.py
+|   |   |   |-- get_url.py
 |   |   |
 |   |   |-- views\
 |   |   |-- __pycache__\
@@ -55,7 +62,6 @@ C:\laragon\www\ponto_funcao\Documentacao\estrutura.txt
 |   |   |
 |   |   |-- __init__.py
 |   |   |-- app.py
-|   |   |-- models.py
 |   |   |-- requirements.txt
 |   |   |-- run.py
 |   |

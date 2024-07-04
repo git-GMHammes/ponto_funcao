@@ -17,11 +17,12 @@ model_mapping = {
     'site_headless_crm': TemplateSiteHeadlessCRMModel
 }
 
+
 @mod.route('/template/<template_name>')
 def get_template_data(template_name):
     model_class = model_mapping.get(template_name)
     if not model_class:
         return jsonify({'error': 'Template not found'}), 404
-    
+
     model = model_class()
     return jsonify(model.data)
