@@ -1,7 +1,5 @@
 <!-- app/templates/home.html -->
-<script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
-<script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
-<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<div id="home-component"></div>
 <script type="text/babel">
   class App extends React.Component {
     render() {
@@ -23,14 +21,14 @@
                   </thead>
                   <tbody>
                     {% for name, url in template_urls.items() %}
-                      <tr>
-                        <td><a className="btn btn-outline-primary btn-sm" href="{{ url }}" role="button" target="_blank">Link</a></td>
-                        <td>
-                          <b>Rota (Endpoint): </b><i>"/api/template/"</i> <br />
-                          <b>String: </b><i>{{ name }}</i>
-                        </td>
-                        <td>{{ url }}</td>
-                      </tr>
+                    <tr>
+                      <td><a className="btn btn-outline-primary btn-sm" href="{{ url }}" role="button" target="_blank">Link</a></td>
+                      <td>
+                        <b>Rota (Endpoint): </b><i>"/api/template/"</i> <br />
+                        <b>String: </b><i>{{ name }}</i>
+                      </td>
+                      <td>{{ url }}</td>
+                    </tr>
                     {% endfor %}
                   </tbody>
                 </table>
@@ -44,5 +42,5 @@
       );
     }
   }
-  ReactDOM.render(<App />, document.getElementById("app"));
+  ReactDOM.render(<App />, document.getElementById("home-component"));
 </script>

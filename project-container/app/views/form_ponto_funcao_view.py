@@ -10,4 +10,4 @@ class FormPontoFuncaoView(MethodView):
         # Aqui você pode tratar os dados enviados pelo formulário
         data = request.form
         print(data)  # Exemplo de processamento dos dados
-        return redirect(url_for('formpontofuncao'))  # Redirecione conforme necessário
+        return redirect(url_for('formpontofuncao'))

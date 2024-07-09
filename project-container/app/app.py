@@ -1,4 +1,4 @@
-# C:\laragon\www\ponto_funcao\app\app.py
+# app/app.py
 from app import create_app
 
 app = create_app()

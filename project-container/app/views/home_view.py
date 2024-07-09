@@ -1,5 +1,6 @@
 # app/views/home_view.py
 import locale
+from pprint import pprint
 from datetime import datetime
 from flask import Blueprint, render_template, request, jsonify
 # Ajuste o caminho conforme a estrutura de diretórios
@@ -33,7 +34,8 @@ class HomeView:
         now = datetime.now()
         # Formato "02 de Junho de 2024, 18:16"
         formatted_date = now.strftime("%d de %B de %Y, %H:%M")
-
+        print("Data Formatada:", formatted_date)
+        
         # Configuração de locale para formatação de data em português
         try:
             locale.setlocale(locale.LC_TIME, 'pt_BR.UTF-8')
@@ -48,7 +50,8 @@ class HomeView:
         base_api_url = f"{url_info['base_url']}api/template/"
         template_urls = {
             name: f"{base_api_url}{name}" for name in model_mapping.keys()}
-
+        print("Locale para data em português não suportado.")
+        
         return render_template('index.html', template_urls=template_urls, formatted_date=formatted_date)
 
     @staticmethod
