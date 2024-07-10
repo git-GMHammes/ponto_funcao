@@ -1,7 +1,5 @@
 {
-  "template_manutencao_sistema": {
-    "nome": "Manutenção de Sistema"
-  },
+  "nome": "Manutenção de Sistema",
   "fronteiras": [
     {
       "fronteira": "ALI",
@@ -14,7 +12,7 @@
     {
       "funcao_transacional": "EE",
       "nome": "Inclusão (antiga)",
-      "complexidade": "baixa",
+      "complexidade": "Baixa",
       "pontos": 3
     },
     {
@@ -38,7 +36,7 @@
     {
       "funcao_transacional": "EE",
       "nome": "Inclusão (alterada)",
-      "complexidade": "baixa",
+      "complexidade": "Baixa",
       "pontos": 3
     },
     {

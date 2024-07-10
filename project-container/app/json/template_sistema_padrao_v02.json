@@ -1,10 +1,5 @@
 {
-  "template_sistema_padrao": [
-    {
-      "nome": "Template para Sistema Padrão",
-      "result":[
-        {}
-      ]
-    }
-  ]
+  "nome": "Template para Sistema Padrão",
+  "fronteiras": [],
+  "funcoes_transacionais": []
 }

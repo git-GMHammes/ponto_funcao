@@ -1,5 +1,7 @@
 # app/views/template_data_view.py
-from flask import Blueprint, jsonify
+
+from flask import Blueprint, jsonify, current_app
+from flask import request
 from app.models import (
     TemplateManutencaoSistemaModel,
     TemplateMigracaoDadosModel,
@@ -17,6 +19,16 @@ model_mapping = {
     'site_headless_crm': TemplateSiteHeadlessCRMModel
 }
 
+# Função para configurar os cabeçalhos CORS
+@mod.after_request
+def after_request(response):
+    # Permitir qualquer origem
+    response.headers['Access-Control-Allow-Origin'] = '*'
+    # Permitir os métodos necessários
+    response.headers['Access-Control-Allow-Methods'] = 'GET, POST, OPTIONS'
+    # Configurar os cabeçalhos permitidos
+    response.headers['Access-Control-Allow-Headers'] = 'Content-Type'
+    return response
 
 @mod.route('/template/<template_name>')
 def get_template_data(template_name):
