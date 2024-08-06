@@ -1,0 +1,14 @@
+{
+    "Indicativa": {
+        "conversoes": ["ALI", "AIE"],
+        "complexidade": false
+    },
+    "Estimada": {
+        "conversoes": ["ALI", "AIE", "EE", "SE", "CE"],
+        "complexidade": false
+    },
+    "Detalhada": {
+        "conversoes": ["ALI", "AIE", "EE", "SE", "CE"],
+        "complexidade": true
+    }
+}

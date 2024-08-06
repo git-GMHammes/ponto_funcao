@@ -1,143 +1,139 @@
 {
-  "template_site_headless_crm": [
+  "nome": "Site Headless CRM",
+  "fronteiras": [
     {
-      "nome": "Site Headless CRM",
-      "fronteiras": [
-        {
-          "fronteira": "ALI",
-          "discriminativo": "Noticias",
-          "complexidade": "Baixa",
-          "pontos": 7
-        },
-        {
-          "fronteira": "ALI",
-          "discriminativo": "Migração de Dados",
-          "complexidade": "Baixa",
-          "pontos": 7
-        },
-        {
-          "fronteira": "ALI",
-          "discriminativo": "Migração de Dados",
-          "complexidade": "Baixa",
-          "pontos": 7
-        },
-        {
-          "fronteira": "AIE",
-          "discriminativo": "Controle de Acesso",
-          "complexidade": "Baixa",
-          "pontos": 5
-        }
-      ],
-      "funcoes_transacionais": [
-        {
-          "funcao_transacional": "EE",
-          "nome": "Migração de Dados - Notícias",
-          "complexidade": "Média",
-          "pontos": 4
-        },
-        {
-          "funcao_transacional": "DSG",
-          "nome": "Home Page Links e Atalhos",
-          "complexidade": "Baixa",
-          "pontos": 0.6
-        },
-        {
-          "funcao_transacional": "SE",
-          "nome": "Lista de Noticias da Home page",
-          "complexidade": "Baixa",
-          "pontos": 4
-        },
-        {
-          "funcao_transacional": "SE",
-          "nome": "Lista de Noticias Completa",
-          "complexidade": "Baixa",
-          "pontos": 4
-        },
-        {
-          "funcao_transacional": "DSG",
-          "nome": "Interligação com Redes Sociais",
-          "complexidade": "Baixa",
-          "pontos": 0.6
-        },
-        {
-          "funcao_transacional": "EE",
-          "nome": "CRUD Noticias - Inclusão (antiga)",
-          "complexidade": "Baixa",
-          "pontos": 3
-        },
-        {
-          "funcao_transacional": "EE",
-          "nome": "CRUD Noticias - Alteração (antiga)",
-          "complexidade": "Baixa",
-          "pontos": 3
-        },
-        {
-          "funcao_transacional": "EE",
-          "nome": "CRUD Noticias - Exclusão (antiga)",
-          "complexidade": "Baixa",
-          "pontos": 3
-        },
-        {
-          "funcao_transacional": "CE",
-          "nome": "CRUD Noticias - Consulta Implicita (antiga)",
-          "complexidade": "Baixa",
-          "pontos": 3
-        },
-        {
-          "funcao_transacional": "EE",
-          "nome": "CRUD Páginas - Inclusão (antiga)",
-          "complexidade": "Baixa",
-          "pontos": 3
-        },
-        {
-          "funcao_transacional": "EE",
-          "nome": "CRUD Páginas - Alteração (antiga)",
-          "complexidade": "Baixa",
-          "pontos": 3
-        },
-        {
-          "funcao_transacional": "EE",
-          "nome": "CRUD Páginas - Exclusão (antiga)",
-          "complexidade": "Baixa",
-          "pontos": 3
-        },
-        {
-          "funcao_transacional": "CE",
-          "nome": "CRUD Páginas - Consulta Implicita (antiga)",
-          "complexidade": "Baixa",
-          "pontos": 3
-        },
-        {
-          "funcao_transacional": "EE",
-          "nome": "CRUD Mídia - Inclusão (antiga)",
-          "complexidade": "Baixa",
-          "pontos": 3
-        },
-        {
-          "funcao_transacional": "EE",
-          "nome": "CRUD Mídia - Alteração (antiga)",
-          "complexidade": "Baixa",
-          "pontos": 3
-        },
-        {
-          "funcao_transacional": "EE",
-          "nome": "CRUD Mídia - Exclusão (antiga)",
-          "complexidade": "Baixa",
-          "pontos": 3
-        },
-        {
-          "funcao_transacional": "CE",
-          "nome": "CRUD Mídia - Consulta Implicita (antiga)",
-          "complexidade": "Baixa",
-          "pontos": 3
-        },
-        {
-          "funcao_transacional": "EE",
-          "nome": "Migração de Dados",
-          "complexidade": "baixa",
-          "pontos": 4
-        }
-      ]
+      "fronteira": "ALI",
+      "discriminativo": "Noticias",
+      "complexidade": "Baixa",
+      "pontos": 7
+    },
+    {
+      "fronteira": "ALI",
+      "discriminativo": "Migração de Dados",
+      "complexidade": "Baixa",
+      "pontos": 7
+    },
+    {
+      "fronteira": "ALI",
+      "discriminativo": "Migração de Dados",
+      "complexidade": "Baixa",
+      "pontos": 7
+    },
+    {
+      "fronteira": "AIE",
+      "discriminativo": "Controle de Acesso",
+      "complexidade": "Baixa",
+      "pontos": 5
+    }
+  ],
+  "funcoes_transacionais": [
+    {
+      "funcao_transacional": "EE",
+      "nome": "Migração de Dados - Notícias",
+      "complexidade": "Média",
+      "pontos": 4
+    },
+    {
+      "funcao_transacional": "DSG",
+      "nome": "Home Page Links e Atalhos",
+      "complexidade": "Baixa",
+      "pontos": 0.6
+    },
+    {
+      "funcao_transacional": "SE",
+      "nome": "Lista de Noticias da Home page",
+      "complexidade": "Baixa",
+      "pontos": 4
+    },
+    {
+      "funcao_transacional": "SE",
+      "nome": "Lista de Noticias Completa",
+      "complexidade": "Baixa",
+      "pontos": 4
+    },
+    {
+      "funcao_transacional": "DSG",
+      "nome": "Interligação com Redes Sociais",
+      "complexidade": "Baixa",
+      "pontos": 0.6
+    },
+    {
+      "funcao_transacional": "EE",
+      "nome": "CRUD Noticias - Inclusão (antiga)",
+      "complexidade": "Baixa",
+      "pontos": 3
+    },
+    {
+      "funcao_transacional": "EE",
+      "nome": "CRUD Noticias - Alteração (antiga)",
+      "complexidade": "Baixa",
+      "pontos": 3
+    },
+    {
+      "funcao_transacional": "EE",
+      "nome": "CRUD Noticias - Exclusão (antiga)",
+      "complexidade": "Baixa",
+      "pontos": 3
+    },
+    {
+      "funcao_transacional": "CE",
+      "nome": "CRUD Noticias - Consulta Implicita (antiga)",
+      "complexidade": "Baixa",
+      "pontos": 3
+    },
+    {
+      "funcao_transacional": "EE",
+      "nome": "CRUD Páginas - Inclusão (antiga)",
+      "complexidade": "Baixa",
+      "pontos": 3
+    },
+    {
+      "funcao_transacional": "EE",
+      "nome": "CRUD Páginas - Alteração (antiga)",
+      "complexidade": "Baixa",
+      "pontos": 3
+    },
+    {
+      "funcao_transacional": "EE",
+      "nome": "CRUD Páginas - Exclusão (antiga)",
+      "complexidade": "Baixa",
+      "pontos": 3
+    },
+    {
+      "funcao_transacional": "CE",
+      "nome": "CRUD Páginas - Consulta Implicita (antiga)",
+      "complexidade": "Baixa",
+      "pontos": 3
+    },
+    {
+      "funcao_transacional": "EE",
+      "nome": "CRUD Mídia - Inclusão (antiga)",
+      "complexidade": "Baixa",
+      "pontos": 3
+    },
+    {
+      "funcao_transacional": "EE",
+      "nome": "CRUD Mídia - Alteração (antiga)",
+      "complexidade": "Baixa",
+      "pontos": 3
+    },
+    {
+      "funcao_transacional": "EE",
+      "nome": "CRUD Mídia - Exclusão (antiga)",
+      "complexidade": "Baixa",
+      "pontos": 3
+    },
+    {
+      "funcao_transacional": "CE",
+      "nome": "CRUD Mídia - Consulta Implicita (antiga)",
+      "complexidade": "Baixa",
+      "pontos": 3
+    },
+    {
+      "funcao_transacional": "EE",
+      "nome": "Migração de Dados",
+      "complexidade": "baixa",
+      "pontos": 4
     }
   ]
 }

@@ -1,0 +1,115 @@
+/* navbar.css */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    text-wrap: nowrap;
+    justify-content: space-around;
+    min-height: 10vh;
+    /* position: fixed; */
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(2 64 167), rgb(0 34 90));
+    color: white;
+  
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-logo-container h1{
+    font-weight: 300;
+  
+  }
+  
+  .navbar-links-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: white;
+    margin-right: 1.5rem;
+    font-size: 1rem;
+    font-weight: 100;
+    transition: color 0.3s ease;
+  }
+  
+  
+  .navbar-links a:hover {
+    color: #e6cb36;
+  }
+  
+  .nav-logo-container {
+    display: flex;
+    align-items: center;
+    width: auto;
+    justify-content: space-evenly;
+  }
+  
+  .nav-logo-container img {
+    max-height: 5.6em;
+  }
+  
+  #navbar.scrolled {
+    background-color: #ffffff;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.15);
+  }
+  
+  .menu-icon {
+    display: none;
+    /* Hide by default */
+    cursor: pointer;
+  }
+  
+  .menu-line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+  }
+  
+  @media screen and (max-width: 1070px) {
+    .navbar-links {
+      display: none;
+      /* Hide by default */
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      background-color: rgb(2 64 167);
+      /* Change to your desired background color */
+    }
+    .nav-logo-container h1{
+      font-weight: 400;
+    
+    }
+    .navbar-links a {
+      margin: 10px 0;
+    }
+  
+    .menu-icon {
+      display: block;
+      /* Show for small screens */
+    }
+  
+    .open .navbar-links {
+      display: flex;
+      /* Show when menu is open */
+    }
+  
+  
+    .nav-logo-container {
+      font-size: 10px;
+      width: 300px;
+    }
+  
+    #navbar {
+      justify-content: space-evenly;
+    }
+  }

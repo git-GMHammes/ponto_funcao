@@ -1,0 +1,70 @@
+.sectionImportar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.sectionImportar h1 {
+    font-weight: 400;
+    font-size: 2.5em;
+    color: #0240a7;
+    padding: 20px 0;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: center;
+}
+
+.areaUpload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7;
+    height: 400px; /* Ajustado altura fixa */
+    width: 80%; /* Ajustado largura máxima responsiva */
+    max-width: 600px; /* Largura máxima */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.areaUpload h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.areaUpload input[type="file"] {
+    margin-bottom: 20px;
+}
+
+.areaUpload button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #0240a7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.areaUpload button:hover {
+    background-color: #0b3a85;
+}
+
+.areaUpload p {
+    margin-top: 20px;
+    font-size: 0.9em;
+}

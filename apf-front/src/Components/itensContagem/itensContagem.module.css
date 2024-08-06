@@ -1,0 +1,81 @@
+.sectionTabela {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.sectionTabela h2 {
+  font-weight: 400;
+  font-size: 2em;
+  color: #0240a7;
+  padding: 20px 0;
+}
+
+.button {
+  align-self: baseline;
+  margin-right: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+  background-color: #0240a7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.areaTabela {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f7;
+  min-width: 840px;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #0240a7;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+td button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+td button:hover {
+  background-color: #005F6B;
+}
+
+.areaAcoes {
+  display: flex;
+  padding-top: 25px;
+}
